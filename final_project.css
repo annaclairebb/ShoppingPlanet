@@ -1,0 +1,148 @@
+body{
+	font-family: 'Fredoka One', sans-serif;
+	color:  #eb02d3;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+h1{
+	font-size: 118px;
+	overflow: hidden;
+	display: inline;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+#blue{
+	color:  #2dadfc;
+}
+
+.quit{
+	text-align: right;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+h2{
+	font-size: 25px;
+}
+
+button{
+	color: #2dadfc;
+	border-color: #eb02d3;
+	cursor:  pointer;
+	font-family: 'Fredoka One', sans-serif;
+}
+
+#button1 , #button2 , #button3 , #button4 , #button5 , #button6{
+	border: none;
+	box-shadow: none;
+	background-color: white;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	/* padding: 5px; */
+}
+
+.tops, .trousers, .shoes{
+	display: inline;
+}
+
+/* 
+#button1{
+	position: absolute;
+	top: 23%;
+	left: 25%;
+}
+
+#button2{
+	right: 25%;
+	position: absolute;
+	top: 23%;
+}
+
+#button3{
+	left: 25%;
+	position: absolute;
+	top: 59%;
+}
+
+#button4{
+	right: 25%;
+	position: absolute;
+	top: 59%;
+}
+
+#button5{
+	left: 25%;
+	position: absolute;
+	top: 97%;
+}
+
+#button6{
+	right: 25%;
+	position: absolute;
+	top: 97%;
+} */
+
+#game_header{
+	line-height: 5px;
+}
+
+
+#equal_button{
+	background: #fff;
+	border-color: #fff;
+	border-style: solid;
+}
+
+#ep_info{
+	width: 400px;
+	justify-content:  center;
+	align-items: center;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#eco_points{
+	line-height: 10px;
+}
+
+#try_again_button{
+	background: #fff;
+	border-color: #fff;
+	border-style: solid;
+}
+
+#end_game_button{
+	background: #fff;
+	border-color: #fff;
+	border-style: solid;
+}
+
+#eco_points_button{
+	background: #fff;
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 8px;
+}
+
+.finish_buttons{
+	display: inline;
+	margin: 5px;
+}
+
+#or{
+	font-size: 25px;
+	padding-top: 20px;
+	/* display: flex;
+	align-items: center;
+	padding: 10px; */
+}
+
+

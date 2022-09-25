@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)https://ac.com/ -->
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel = 'stylesheet' href="final_project.css">
+
+
+
+	<link rel="canonical" href="https://shoppingplanet.com/">
+
+	<title>Shopping Planet</title>
+
+	<!-- <meta name="description" content="AC is how Anna Claire Breuss-Burgess signs off on code. This profile-page is a homage to the earliest web designers."> -->
+
+	<!-- adding google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+	<!--  means this site wont be shown on search engines-->
+	<!-- <meta name="robots" content="noindex"> -->
+
+</head>
+
+<body>
+	<div id = 'game_header'>
+		<div class = 'quit'>
+			<a href = 'index.html' class = 'quit' id = 'blue'>Quit</a>
+		</div>
+		<h2>Choose your outfit:</h2>
+	</div>
+
+
+	<!-- TOPS -->
+	<div class = 'tops'>
+		<button id = 'button1' onclick = 'changeTop1()'>
+			<img src = './files/left_button.png' alt = img id = 'left button' height = '200'>
+		</button>
+
+		<img src = './files/top1.jpg' alt = img id = 'tops' width = '200'>
+
+		<button id = 'button2' onclick = 'changeTop2()'>
+			<img src = './files/right_button.png' alt = img id = 'right button' height = '200'>
+		</button>
+	</div>
+
+	<p></p>
+
+	<!-- <p id = 'demo'></p> -->
+
+	<!--TROUSERS -->
+	<div class = 'trousers'>
+		<button id = 'button3' onclick = 'changeTrousers1()'>
+			<img src = './files/left_button.png' alt = img id = 'left button' height = '200'>
+		</button>
+
+		<img src = './files/trousers1.jpg' alt = img id = 'trousers' width = '200'>
+
+		<button id = 'button4' onclick = 'changeTrousers2()'>
+			<img src = './files/right_button.png' alt = img id = 'right button' height = '200'>
+		</button>
+	</div>
+
+	<p></p>
+
+	<!-- SHOES -->
+
+	<div class = 'shoes'>
+		<button id = 'button5' onclick = 'changeShoes1()'>
+			<img src = './files/left_button.png' alt = img id = 'left button' height = '200'>
+		</button>
+
+		<img src = './files/shoes1.jpg' alt = img id = 'shoes' width = '200'>
+
+		<button id = 'button6' onclick = 'changeShoes2()'>
+			<img src = './files/right_button.png' alt = img id = 'right button' height = '200'>
+		</button>
+	</div>
+
+	<p></p>
+
+	<!-- equal button -->
+
+	<h3>Calculate price:</h3>
+
+	<!-- <button id = 'equal_button' onclick = 'price_pagge.html'>=</button> -->
+	<!-- href = 'price_page.html'  -->
+
+	<!-- <a id = 'equal_button' onclick = 'return logging_index()'>
+		<img src="./files/equal_button.png" height="80" style = "text-align: center" alt = 'equal button'>
+	</a> -->
+	<button id = 'equal_button' onclick = 'logging_index()'>
+		<img src="./files/equal_button.png" height="90" style = "text-align: center" alt = 'equal button'>
+	</button>
+
+	<div id = 'dropdown' class = 'dropdownContent' style = 'display: none'>
+		<div id = 'eco_points'>
+			<p style = 'font-size: 25px;'>Your outfit's eco points:</p>
+
+			<!-- <button id = 'eco_points_button' onclick = 'logging_index()'>
+				click here to see eco points
+			</button> -->
+
+			<!-- <p id="printing_ep"></p> -->
+
+			<p style = 'font-size: 90px' id = 'blue'><span id = 'printing_ep'></span>/30</p>
+
+			<!-- <p style = 'font-size: 90px'>30</p> -->
+
+			<p style = 'font-size: 40px'>You're an <span id = 'printing_name' style = 'color: #2dadfc'></span></p>
+
+		</div>
+
+		<br>
+		<p id = 'blue' style = 'font-size: 25px;'>What are eco points?</p>
+		<div id = 'ep_info'>
+			<ul>
+				<li>Eco points represent your outfit's <b><i><span id = 'blue'>price</span></b></i> for the planet. </li>
+				<li>Each item of clothing is asigned eco points (10 being the most sustainable and 0 being the least), resulting in an outfit total out of <b>30</b>. </li>
+				<li>It takes into account its water intake, carbon emissions, and micro-plastic output</li>
+				<span style = 'display: none' id = tryagain><li>Try again and see if you can become an Eco Warrior</li></span>
+			</ul>
+		</div>
+
+		<br>
+
+		<p style = 'font-size: 25px'>Shop <span id = 'blue'>for </span>the <span id = 'blue'>planet</span> not against it!</p> 
+
+		<!-- <a href = 'index.html' onclick = 'clearing_ep()'>
+			<img src="./files/play_again_button.png" height="90" style = "text-align: center" alt = 'play again button'></a>
+		</a> -->
+	<!-- onclick = 'clearing_ep()' -->
+		
+		<button id = 'try_again_button'  onclick = "location.href = 'index.html';" class = 'finish_buttons'>
+			<img src="./files/try_again_button.png" height="90" style = "text-align: center" alt = 'try again button'>
+		</button>
+		<!-- <p id = 'or' class = 'finish_buttons'>or</p> -->
+		<button id = 'end_game_button'  onclick = "location.href = 'info_page.html';" class = 'finish_buttons'>
+			<img src="./files/end_game_button.png" height="90" style = "text-align: center" alt = 'end game button'>
+		</button>
+		
+	</div>
+
+
+
+<script src = 'final_project.js' type = 'text/javascript'></script>
+</body>
+</html>
